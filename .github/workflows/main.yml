@@ -1,11 +1,11 @@
 name: Claude Session Reset
 on:
   schedule:
-    - cron: '0 5 * * *'
-    - cron: '1 10 * * *'
-    - cron: '2 15 * * *'
-    - cron: '3 20 * * *'
-
+    - cron: '0 4 * * *'     # 05:00 Lisbon
+    - cron: '1 9 * * *'     # 10:01 Lisbon
+    - cron: '2 14 * * *'    # 15:02 Lisbon
+    - cron: '3 19 * * *'    # 20:03 Lisbon
+    
 jobs:
   trigger:
     runs-on: ubuntu-latest
