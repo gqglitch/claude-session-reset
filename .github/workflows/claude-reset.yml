@@ -11,6 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: npm install -g @anthropic-ai/claude-code
-      - run: claude -p "Hi"
+      - run: claude -p "Hi" --model haiku
         env:
           CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
